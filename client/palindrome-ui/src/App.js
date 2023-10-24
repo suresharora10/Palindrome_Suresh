@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import axios from "axios";
+
+function findNearestPalindrome() {
+  console.log(
+    "TODO: link Jira story to create a task for assigning someone to this 🙃"
+  );
+  return null;
+}
 
 function App() {
+  const responseValue = "121";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Palindrome</h1>
+      <input
+        onChange={(e) => {
+          console.log(e);
+        }}
+        role="region"
+      />
+      <button onClick={findNearestPalindrome} aria-label="button">
+        Submit
+      </button>
+      <div>
+        <strong>The answer is: </strong>
+        <p>{responseValue}</p>
+      </div>
     </div>
   );
 }

@@ -45,19 +45,6 @@ The sample algorithm used may not be the most efficient implementation
 of the solution. Implement a more performant solution and discuss or
 show how you can prove your implementation is faster than the original.
 
+# Getting Started 
 
-# Getting Started
-
-
-### Run maven project:
-
-```shell
-mvn spring-boot:run
-```
-
-### build jar file 
-
-```shell
-mvn clean package spring-boot:repackage
-java -jar target/palindrome-1.0.0.jar
-```
+- Please see [Java API details](/server/README.md)
