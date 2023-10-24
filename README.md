@@ -30,7 +30,6 @@ Input: n = "123"
 
 Output: "121"
 
-
 ## Additional Requirements
 
 * Implement an API contract (e.g. swagger/OpenAPI)
@@ -44,6 +43,12 @@ Output: "121"
 The sample algorithm used may not be the most efficient implementation
 of the solution. Implement a more performant solution and discuss or
 show how you can prove your implementation is faster than the original.
+
+# Project structure
+
+This project includes both the Java API and ReactJS code:
+* `/server` contains the Sprint Boot project
+* `/client/palindrome-ui` contains the ReactJS project
 
 # Getting Started 
 
