@@ -2,6 +2,7 @@ package com.atb.palindrome;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +26,7 @@ public class PalindromeController {
         return rev == x;
     }
 
+    @CrossOrigin
     @GetMapping(value = "/", produces = { "text/plain" })
     public ResponseEntity<Object> index() {
         return ResponseEntity.ok().body("Hello world");
@@ -38,6 +40,7 @@ public class PalindromeController {
      * @param number String
      * @return ResponseEntity<Object>
      */
+    @CrossOrigin
     @GetMapping(value = "/palindrome/{number}")
     public ResponseEntity<Object> palindrome(@PathVariable String number){
         int num = Integer.parseInt(number);
