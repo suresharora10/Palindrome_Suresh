@@ -1,22 +1,25 @@
 # Requirements
 
-Given this basic Spring Boot project structure, please implement a
-REST service and simple UI using React.js that implements an endpoint to solve the palindrome
-problem described below.
+Given the basic Spring Boot and ReactJS applications, please implement
+API automation tests to ensure the reliability of the REST service and
+UI end-to-end tests for a comprehensive test coverage.
 
-We are looking for you to:
 
-* complete, refine, and polish the solution you started building with us
-* create a simple clean UI in ReactJS that calls the Java API
-* use tests to show the effectiveness of your solution
+**We are looking for you to:**
+
+* fork the repository to your own Gitlab/Github account
+* Using the framework of your choosing:
+  * implement API Automation tests for the Spring Boot REST service
+  * implement UI End-to-End tests for the ReactJS web app
 * add any applicable documentation
+* include screenshots of passing tests
 * note any assumptions that you make
 
-Please craft a solution that:
+**Please craft a solution that:**
 
 * you would consider to be representative of your level of professionalism
 * you would be comfortable handing off to someone else to maintain
-* You would feel at ease delegating this to a developer who may not be as well-versed in Spring Boot
+* You would feel at ease delegating this to a developer who may not be as well-versed
 
 ## Palindrome problem
 
@@ -30,15 +33,15 @@ Input: n = "123"
 
 Output: "121"
 
-## Additional Requirements
+## Optional Requirements
 
-* Implement an API contract (e.g. swagger/OpenAPI)
-* Validation of requests adhering to contract
+* Implement unit tests on both the API and ReactJS UI
 * Note and/or implement any improvements to the code and project
   structure that you believe would make this service "enterprise
   ready"
 
-### Optional 
+
+### Very Optional 
 
 The sample algorithm used may not be the most efficient implementation
 of the solution. Implement a more performant solution and discuss or
