@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="palindrome_testcases" />
+        <module name="palindrome" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="palindrome (1)" target="11" />
+      <module name="palindrome (2)" target="11" />
+      <module name="Palindrome_TestCases" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Palindrome_TestCases" options="-parameters" />
+      <module name="palindrome" options="-parameters" />
+      <module name="palindrome (1)" options="-parameters" />
+      <module name="palindrome (2)" options="-parameters" />
+      <module name="palindrome_testcases" options="" />
+    </option>
+  </component>
+</project>

@@ -43,6 +43,12 @@ public class PalindromeController {
     @CrossOrigin
     @GetMapping(value = "/palindrome/{number}")
     public ResponseEntity<Object> palindrome(@PathVariable String number){
+        try{
+            Integer.parseInt(number);
+        }
+        catch(NumberFormatException e){
+            return ResponseEntity.badRequest().body("Invalid value passed.");
+        }
         int num = Integer.parseInt(number);
         for (int i = 1;; i++) {
             if (isPalindrome(num - i))
